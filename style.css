@@ -1,0 +1,72 @@
+:root {
+  --bg: #fbfaf7;
+  --fg: #1f1d1a;
+  --muted: #5c5750;
+  --line: #e4ded3;
+  --link: #1d5c8c;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1a18;
+    --fg: #ece8e1;
+    --muted: #b3ab9f;
+    --line: #3a3631;
+    --link: #8cc3ec;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 4rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin: 0 0 0.25rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.5rem;
+}
+
+p,
+li {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: var(--link);
+}
+
+.date,
+.note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+nav {
+  margin: 0 0 2rem;
+  font-size: 0.95rem;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2.5rem 0;
+}
